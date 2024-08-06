@@ -10,11 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> <!-- Подключение модного шрифта -->
 </head>
 <body>
-  
-  <div id="svg-container"></div>
   <h1>Germany</h1>
-  <script src="js/load_map.js"></script>  
-  <!-- <script src="scripts/bb.js"></script>   -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div id="svg-container_1"></div>
+        <h1>Bundesländer</h1>
+      </div>
+      <div class="swiper-slide">
+        <div id="svg-container_2"></div>
+        <h1>Landkreise</h1>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+ 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/load_map.js"></script> 
+
 
 </body>
 </html>
