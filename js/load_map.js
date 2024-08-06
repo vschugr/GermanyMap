@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Загрузка SVG файла
-    fetch('./data/bundeslands.svg')
+    fetch('./svg/bundeslands.svg')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
